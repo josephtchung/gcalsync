@@ -2,6 +2,8 @@
 
 A Chrome extension that syncs busy times between Google Calendars. It creates "Busy" events in a target calendar based on events from source calendars.
 
+Vibe-coded with Cursor and Claude
+
 ## Features
 
 - Select target and source calendars from your Google Calendar account
