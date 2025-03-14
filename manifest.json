@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Calendar Sync",
+  "version": "1.0",
+  "description": "Sync busy times between Google Calendars",
+  "permissions": [
+    "identity",
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/*"
+  ],
+  "oauth2": {
+    "client_id": "781736463398-m9rf5cublve9k68o1dsjh58rpo12ms7i.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar",
+      "https://www.googleapis.com/auth/calendar.events"
+    ]
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/index.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "128": "icons/icon128.png"
+  }
+} 

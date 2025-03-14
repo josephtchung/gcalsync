@@ -1,0 +1,228 @@
+:root {
+  --primary-color: #1a73e8;
+  --primary-hover: #1557b0;
+  --secondary-color: #5f6368;
+  --error-color: #d93025;
+  --success-color: #188038;
+  --background-color: #ffffff;
+  --surface-color: #f8f9fa;
+  --border-color: #dadce0;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+}
+
+body {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: var(--text-primary);
+  background: var(--background-color);
+}
+
+.container {
+  padding: 16px;
+}
+
+h2 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.status-section,
+.settings-section,
+.actions-section {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--surface-color);
+  border-radius: 8px;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--secondary-color);
+  color: white;
+}
+
+.status-badge.syncing {
+  background: var(--primary-color);
+}
+
+.last-sync {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.calendar-list {
+  margin-bottom: 8px;
+}
+
+.calendar-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.remove-calendar {
+  padding: 0 8px;
+  border: none;
+  background: none;
+  color: var(--error-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primary-button {
+  background: var(--primary-color);
+  color: white;
+}
+
+.primary-button:hover {
+  background: var(--primary-hover);
+}
+
+.secondary-button {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.secondary-button:hover {
+  background: var(--surface-color);
+}
+
+.status-message {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.status-message.error {
+  background: #fce8e6;
+  color: var(--error-color);
+}
+
+.status-message.success {
+  background: #e6f4ea;
+  color: var(--success-color);
+}
+
+.hidden {
+  display: none;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.checkbox-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 8px;
+  background-color: white;
+}
+
+.calendar-checkbox {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.calendar-checkbox input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.calendar-checkbox label {
+  margin: 0;
+  cursor: pointer;
+}
+
+.calendar-checkbox .calendar-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.calendar-checkbox .calendar-name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.calendar-checkbox .calendar-id {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.loading-message {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 16px;
+} 

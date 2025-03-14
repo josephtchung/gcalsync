@@ -1,0 +1,10 @@
+Create a Chrome extension that works with multiple google calendars to automatically sync entries in
+specific calendars into a single master calendar.
+
+The problem I want to solve is that I have mutiple personal calendars that are shared to my work
+calendar. Although I can see all of my entries in my work calendar, my colleagues cannot see them
+and will schedule meetings at times that collide with these personal entries.
+
+I want an extension or other kind of service that periodically syncs these calendar entries into
+my work calendar displaying them as "busy" (i.e. not with the actual contents of the calendar entry)
+so that my work colleagues cannot schedule meetings that collide.
