@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Calendar Sync",
   "version": "1.0",
-  "description": "Sync busy times between Google Calendars",
+  "description": "Sync multiple calendars into a master calendar with busy time slots",
   "permissions": [
     "identity",
     "storage",
@@ -12,7 +12,7 @@
     "https://www.googleapis.com/*"
   ],
   "oauth2": {
-    "client_id": "781736463398-m9rf5cublve9k68o1dsjh58rpo12ms7i.apps.googleusercontent.com",
+    "client_id": "YOUR CLIENT ID HERE",
     "scopes": [
       "https://www.googleapis.com/auth/calendar",
       "https://www.googleapis.com/auth/calendar.events"
